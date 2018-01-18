@@ -1,0 +1,8 @@
+This is a program made in Aalto University as an exercise in course 'ELEC-C7310 - Sovellusohjelmointi' in autumn 2017. 
+The program reads code-files and writes them to another file removing any comments (from // to new line and from /* to */) and empty lines. 
+
+The program takes multiple filenames as parameters and opens a child process for each. The child process then runs clean-fuction, which cleans the 
+code and writes it into the file with name "original_name.clean". The father process waits for all the childs to be ready before quitting.
+If ".clean" file exists, the program overwrites it.
+
+The program also writes log to a file named "log". 
